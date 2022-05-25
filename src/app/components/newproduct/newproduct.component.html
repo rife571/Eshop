@@ -1,0 +1,66 @@
+<div class="row justify-content-center p-2">
+  <div class="col-6">
+<div   class="card" style="box-shadow: 5px 5px 5px;">
+
+  <div class="card-body">
+    <h5 class="card-title" >Aggiungi prodotto</h5>
+
+<div class="portlet-body form">
+  <form (ngSubmit)=" Salva()" >
+  <div class="form-body">
+
+    <div class="form-group">
+      <label for="title">Nome Prodotto:</label>
+      <input name="title" type="text" [(ngModel)] ="prodotto.title" class="form-control"
+      placeholder="Nome prodotto" required minlength="5" maxlength="30" >
+    </div>
+
+    <div class="form-group">
+      <label for="price">Prezzo:</label>
+      <input name="price" type="text" [(ngModel)] ="prodotto.price" class="form-control"
+      placeholder="prezzo prodotto" required minlength="5" maxlength="30" >
+    </div>
+
+    <div class="form-group">
+      <label for="category">Categoria Prodotto:</label>
+      <input name="category" type="text" [(ngModel)] ="prodotto.category" class="form-control"
+      placeholder="Categoria prodotto" required minlength="5" maxlength="30" >
+    </div>
+
+    <div class="form-group">
+      <label for="description">Descrizione Prodotto:</label>
+      <input name="description" type="text" [(ngModel)] ="prodotto.description" class="form-control"
+      placeholder="Descrizione prodotto" required minlength="6" maxlength="80" >
+    </div>
+
+    <div class="form-group">
+      <label for="employee">Staff:</label>
+      <input name="employee" type="text" [(ngModel)] ="prodotto.employee" class="form-control"
+      placeholder="identificativo personale" required minlength="6" maxlength="80" >
+    </div>
+
+   <!--  <div class="form-group">
+      <label for="review">Review Prodotto:</label>
+      <input name="review" type="text" [(ngModel)] ="prodotto.reviews" class="form-control"
+      placeholder="Review prodotto" required minlength="5" maxlength="30" >
+    </div> -->
+
+
+
+    <hr class="line-form">
+
+     <button type="submit" id="btnAdd" class="btn btn-primary form-buttons" >
+        <i class="fa fa-floppy-o" aria-hidden="true"></i>  Salva
+    </button>
+<!--
+    <button type="submit" id="btnAbort" class="btn btn-warning form-buttons" (click)="abort()">
+      <i class="fa fa-floppy-o" aria-hidden="true"></i>  Annulla
+  </button> -->
+
+  </div>
+</form>
+</div>
+  </div>
+</div>
+</div>
+</div>
